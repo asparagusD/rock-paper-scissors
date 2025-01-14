@@ -1,3 +1,4 @@
+//Generate random choices for the computer// 
 function getComputerChoice(computerGuess) {
     computerGuess = Math.floor(Math.random() * 100);
     if (computerGuess <= 33) {
@@ -9,12 +10,14 @@ function getComputerChoice(computerGuess) {
     }   
 }
 
+//Prompt the user to enter a value//
 function getHumanChoice(humanGuess) {
     humanGuess = prompt("Rock, Paper or Scissors? ","");
-    humanGuess = humanGuess.toLowerCase();
+    humanGuess = humanGuess.toLowerCase();   //whatever value the user inputs, lowercase it//
     return humanGuess;
 }
 
+//The logic behind Rock-Paper-Scissors game for a single round//
 function playRound(humanChoice,computerChoice) {
     humanChoice = getHumanChoice();
     computerChoice = getComputerChoice();
@@ -42,6 +45,7 @@ function playRound(humanChoice,computerChoice) {
     }
 }
 
+//Play the game for five more rounds and show the results//
 function playGame() {
     playRound();
     playRound();
