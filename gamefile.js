@@ -48,8 +48,7 @@ function playRound(humanChoice,computerChoice) {
             finalScore.textContent = `You lose the game! The score is ${humanScore}-${computerScore}!`;
         } 
         finalResults.appendChild(finalScore);
-        document.body.innerHTML = document.body.innerHTML;
-        
+        document.body.innerHTML = document.body.innerHTML;     
     }
 }
 
@@ -79,7 +78,6 @@ function playGame() {
         playRound("scissors");
     }); 
 }
-
 
 let humanScore = 0;
 let computerScore = 0;
